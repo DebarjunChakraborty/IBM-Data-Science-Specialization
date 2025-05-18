@@ -1,112 +1,85 @@
-# IBM-Data-Science-Specialization
+# IBM Data Science Professional Certificate
 
-# Winning the Space Race with Data Science: Predicting Falcon 9 Landing Success
+## Overview
 
-## Project Overview
-This project leverages data science methodologies to predict the success of SpaceX's Falcon 9 first-stage landings. By analyzing historical launch data, the project aims to optimize cost estimations for future launches, providing actionable insights into the factors influencing landing outcomes.
+This repository contains the assignments and project files completed as part of the **IBM Data Science Professional Certificate** offered through Coursera. This certification programme, developed by IBM, is designed to prepare learners for a career in data science by equipping them with job-ready and AI-driven skills. The programme does not require any prior experience in programming or computer science.
 
----
+## Certificate Details
 
-## Table of Contents
-1. [Executive Summary](#executive-summary)  
-2. [Introduction](#introduction)  
-3. [Methodology](#methodology)  
-4. [Results](#results)  
-5. [Conclusion](#conclusion)  
-6. [Appendix](#appendix)  
+- **Provider**: IBM via Coursera
+- **Instructors**: IBM Skills Network Team, Dr. Pooja, Abhishek Gagneja
+- **Level**: Beginner
+- **Duration**: Approx. 4 months (10 hours/week)
+- **Language**: English
+- **Delivery Mode**: Online, self-paced
+- **Credential**: IBM Professional Certificate
 
----
+## What You'll Learn
 
-## Executive Summary
-### Key Objectives
-- Predict Falcon 9 first-stage landing success using historical launch data.  
-- Identify factors (e.g., payload mass, launch site, orbit type) correlated with landing outcomes.  
+- Master current data science tools and libraries including Python, SQL, Pandas, NumPy, Scikit-learn, Matplotlib, and more.
+- Import, clean, analyse and visualise data.
+- Build machine learning models and data pipelines.
+- Develop a portfolio of projects to showcase your data science skills.
+- Work with Jupyter, GitHub, Watson Studio, and other industry-standard tools.
 
-### Findings
-- **Accuracy**: Predictive models achieved **83.33% accuracy**, with Logistic Regression and KNN performing optimally.  
-- **Trends**: Success rates improved over time, peaking in 2017, with certain orbits (e.g., GEO, ES-L1) showing 100% success.  
-- **Payload Impact**: Heavy payloads (>10,000 kg) in LEO/ISS orbits had higher success rates.  
+## Skills Gained
 
----
+- Data Literacy
+- Interactive Data Visualisation
+- Exploratory Data Analysis (EDA)
+- Feature Engineering
+- Unsupervised Learning
+- Generative AI
+- Dashboard Creation
+- SQL & Databases
+- Statistical Modelling
 
-## Introduction
-### Problem Statement
-SpaceX’s competitive advantage lies in reusable rockets. Accurately predicting first-stage landing success enables better resource allocation and cost savings.  
+## Course Breakdown
 
-### Key Question  
-*Can historical launch data determine if the Falcon 9’s first stage will land successfully?*  
+This programme comprises 12 individual courses:
 
-### Significance  
-- **Cost Reduction**: Reusability cuts launch costs by ~30%.  
-- **Data-Driven Decisions**: Insights guide mission planning and booster design.  
+1. **What is Data Science?** – 11 hours
+2. **Tools for Data Science** – 18 hours
+3. **Data Science Methodology** – 6 hours
+4. **Python for Data Science, AI & Development** – 25 hours
+5. **Python Project for Data Science** – 8 hours
+6. **Databases and SQL for Data Science with Python** – 18 hours
+7. **Data Analysis with Python** – 15 hours
+8. **Data Visualisation with Python** – 20 hours
+9. **Machine Learning with Python** – 20 hours
+10. **Applied Data Science Capstone** – 13 hours
+11. **Generative AI: Elevate Your Data Science Career** – 13 hours
+12. **Data Scientist Career Guide and Interview Preparation** – 9 hours
 
----
+## Applied Learning Projects
 
-## Methodology
-### Data Collection
-- **Sources**:  
-  - **SpaceX API**: Rocket specs, launch sites, payload data (JSON format).  
-  - **Wikipedia**: Historical launch records (HTML tables).  
-- **Tools**: Python (`requests`, `BeautifulSoup`, `pandas`).  
+### Key Projects:
 
-### Data Wrangling & EDA
-- **Cleaning**: Labeled outcomes as `1` (success) or `0` (failure).  
-- **Visualization**:  
-  - Flight number vs. payload mass.  
-  - Launch site success rates (e.g., KSC LC-39A: 76.7%).  
-- **SQL Queries**: Identified unique launch sites, NASA’s total payload (45,596 kg), and first successful ground landing (2015-12-22).  
+- Extract and graph financial data using Pandas
+- Perform SQL queries on census and crime data sets
+- Visualise and predict housing prices using regression models
+- Create an interactive dashboard for flight reliability
+- Predict loan case outcomes with classification algorithms
 
-### Interactive Analytics
-- **Folium Maps**: Geospatial analysis of launch sites.  
-- **Plotly Dash Dashboard**:  
-  - Success rates by site/orbit.  
-  - Payload vs. success correlation.  
+## Repository Structure
 
-### Predictive Analysis
-- **Models Tested**: Logistic Regression, SVM, Decision Tree, KNN.  
-- **Performance**:  
-  | Model          | Accuracy | F1-Score |  
-  |----------------|----------|----------|  
-  | Logistic Reg.  | 86.67%   | 90.91%   |  
-  | Decision Tree  | 91.11%   | 93.75%   |  
+```
+IBM-Data-Science-Specialization/
+│
+├── Tools for Data Science/
+├── Python Project for Data Science/
+├── Data Analysis with Python/
+└── Applied Data Science Capstone/
+```
 
----
+Each directory contains the relevant notebooks and files used to complete the course-specific assignments and projects.
 
-## Results
-### Key Insights
-1. **Flight Number vs. Success**: Higher flight numbers (recent launches) correlate with improved success.  
-2. **Orbit Types**: ES-L1, GEO, and HEO orbits had 100% success rates.  
-3. **Payload Mass**:  
-   - Failures were common with payloads <10,000 kg.  
-   - Heavy payloads in LEO/ISS orbits succeeded consistently.  
+## Acknowledgements
 
-### Visual Highlights  
-- **Folium Map**: Proximity to coastlines/highways influenced success ratios.  
-- **Dashboard**: KSC LC-39A had the highest success rate (76.7%).  
+- Special thanks to the IBM Skills Network Team and Coursera for delivering a comprehensive learning experience.
+- Course link: [IBM Data Science Professional Certificate on Coursera](https://www.coursera.org/professional-certificates/ibm-data-science)
 
----
+## Author
 
-## Conclusion
-### Recommendations
-- **Model Selection**: Use Logistic Regression/KNN for balance of speed and accuracy.  
-- **Future Work**: Incorporate weather/seasonal data to enhance predictions.  
-
-### Impact  
-Predictive insights can reduce SpaceX’s operational costs by optimizing launch strategies.  
-
----
-
-## Appendix
-### Repository  
-- **GitHub**: [IBM-Data-Science-Specialization](https://github.com/DebarjunChakraborty/IBM-Data-Science-Specialization.git)  
-- **Tools**: Python, SQL, Folium, Plotly Dash.  
-
-### Data Sources  
-- SpaceX API: [API Documentation](https://docs.spacexdata.com)  
-- Wikipedia: [Falcon 9 Launch Log](https://en.wikipedia.org/wiki/List_of_Falcon_9_and_Falcon_Heavy_launches)  
-
----
-
-## Acknowledgements  
-- **IBM Skills Network** for project guidance.  
-- **SpaceX** for providing open-access launch data.  
+**Debarjun Chakraborty**  
+GitHub: [DebarjunChakraborty](https://github.com/DebarjunChakraborty)
